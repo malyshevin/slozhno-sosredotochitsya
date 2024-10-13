@@ -13,14 +13,14 @@
     --accent-color: #FF0070;
     --title-color: #DB00FF;
     --text-color: #F1B2CE;
-    
-    --header-background-image: url(../images/cover-image-dark.png);   
+
+    --background-image: url(../images/cover-image-dark.png);   
   }
 }
 
 @media (prefers-color-scheme: light) {
   :root {
     --background-color: #FFF1F7;
-    --header-background-image: url(../images/cover-image-light.png);
+    --background-image: url(../images/cover-image-light.png);
   }
 }

@@ -4,22 +4,78 @@
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 
   background-color: var(--background-color);
+
+  background-image: var(--background-image);
+  background-repeat: no-repeat;
+  background-position-y: top;
+  background-position-x: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .header {
   display: grid;
 
-  background-image: var(--header-background-image);
-  background-repeat: no-repeat;
-  background-position-y: top;
-  background-position-x: center;
-  background-size: cover;
+  position: relative;
 }
 
-.decorated-zone {
-  /* background-image: var(--header-background-image); */
-  /* background-position: center;
-  background-size: cover; */
+.decorated-zone::before {
+  content: '';
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  width: 25px;
+  height: 25px;
+
+  border-top-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  border-style: solid;
+  border-color: var(--accent-color);
+}
+
+.decorated-zone::after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 25px;
+  height: 25px;
+
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 0px;
+  border-left-width: 0px;
+  border-style: solid;
+  border-color: var(--accent-color);
+}
+
+.header__mark {
+  position: absolute;
+  color: var(--accent-color);
+  text-transform: uppercase;
+  top: 10px;
+  right: 38px;
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+}
+
+.header__mark::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 8px;
+  left: 43px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  box-shadow: 0 0 4px 2px var(--accent-color);
+  background-color: var(--accent-color);
 }
 
 .header__theme-menu {
@@ -37,7 +93,7 @@
 }
 
 .header__theme-menu-button {
-  font-family: 'IBM Plex Mono';
+  font-family: var(--font-family);
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -57,10 +113,10 @@
 }
 
 .header__title {
-  font-family: 'IBM Plex Mono';
+  font-family: var(--font-family);
   font-style: normal;
   font-weight: 700;
-  font-size: 116px;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 82.5%;
 
   color: var(--title-color);
@@ -78,12 +134,109 @@
   margin-top: 55px;
   margin-bottom: 66px;
 
-  font-family: 'IBM Plex Mono';
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.main {
+  margin-top: 40px;
+  display: grid;
+  gap: 50px;
+}
+
+.section {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.section__title {
+  width: auto;
+
+  font-family: var(--font-family);
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 23px;
 
-  color: #000028;
+  color: var(--accent-color);
+
+  margin-bottom: 20px;
+}
+
+.title-decor {
+  color: var(--background-color);
   background-color: var(--accent-color);
+}
+
+.section__article-list {
+  display: grid;
+  gap: 20px;
+}
+
+.section__article-list-title {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  color: var(--background-color);
+}
+
+.section__article-title {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  margin-bottom: 10px;
+}
+
+.section__article-title_regular {
+  font-weight: 400;
+}
+
+.section__article-text {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: var(--text-color);
+}
+
+.section__article-text-link {
+  border: transparent;
+  text-shadow: 2px 2px 0px var(--accent-color);
+  text-decoration: none;
+  border-bottom: 1px solid var(--text-color);
+}
+
+.section__image {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: auto;
+}
+
+.footer {
+  display: grid;
+  height: fit-content;
+  margin-top: 40px;
+  position: relative;
+  text-align: center;
+}
+
+.footer__title {
+  margin-top: 286px;
+  margin-bottom: 285px;
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 700;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  line-height: 82.5%;
+  color: var(--title-color);
+  text-shadow: 2px 2px 0px var(--accent-color);
 }
