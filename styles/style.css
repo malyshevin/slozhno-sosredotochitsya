@@ -320,35 +320,35 @@
 }
 
 .section:first-of-type,
-.section:nth-of-type(3) {
+.section__type-third {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .section:first-of-type .section__title,
-.section:nth-of-type(3) .section__title {
+.section__type-third .section__title {
     flex: 0 0 auto;
     width: 33%;
 }
 
 @media (width < 1024px) {
     .section:first-of-type .section__title,
-    .section:nth-of-type(3) .section__title {
+    .section__type-third .section__title {
           width: 32%;
     }
 }
 
 @media (width < 768px) {
     .section:first-of-type .section__title,
-    .section:nth-of-type(3) .section__title {
+    .section__type-third .section__title {
         width: 100%;
         margin-bottom: 20px;
     }
 }
 
 .section:first-of-type .section__article-list,
-.section:nth-of-type(3) .section__article-list {
+.section__type-third .section__article-list {
     flex-direction: column;
     gap: 20px;
     flex: 0 0 auto;
@@ -357,46 +357,46 @@
 
 @media (width < 1024px) {
     .section:first-of-type .section__article-list,
-    .section:nth-of-type(3) .section__article-list {
+    .section__type-third .section__article-list {
         width: 65%;
     }
 }
 
 @media (width < 768px) {
     .section:first-of-type .section__article-list,
-    .section:nth-of-type(3) .section__article-list {
+    .section__type-third .section__article-list {
         width: 100%;
     }
 }
 
-.section:nth-of-type(2) .section__title {
+.section__type-second .section__title {
     width: 30%;
 }
 
 @media (width < 768px) {
-    .section:nth-of-type(2) .section__title {
+    .section__type-second .section__title {
         width: 100%;
     }
 }
 
-.section:nth-of-type(2) .section__article-list {
+.section__type-second .section__article-list {
     justify-content: space-between;
 }
 
 
 @media (width < 1024px) {
-    .section:nth-of-type(2) .section__article-list {
+    .section__type-second .section__article-list {
         gap: 20px;
     }
 }
 
-.section:nth-of-type(2) .section__article-item {
+.section__type-second .section__article-item {
     flex: 0 0 auto;
     width: 32%;
 }
 
 @media (width < 1024px) {
-    .section:nth-of-type(2) .section__article-item {
+    .section__type-second .section__article-item {
         flex: 1 0 auto;
         width: 100%;
     }
