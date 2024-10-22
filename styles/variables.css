@@ -1,39 +1,16 @@
 :root {
     --font-family: "IBM Plex mono";
-}
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        --main-text-color: #f1b2ce;
-        --title-color: #db00ff;
-        --title-shadow-color: #ff0070;
-        --hover-color: 1px solid rgba(255, 0, 112, 0.4);
-        --background-color: #000028;
-        --background-image: url(../images/cover-image-dark.png);
-        --article-title-color: var(--background-color);
-        --section-title-color: var(--title-shadow-color);
-        --border-color: var(--main-text-color);
-        --corners-color: var(--title-shadow-color);
-        --title-decor-color: var(--title-shadow-color);
-        --link-shadow-color: var(--title-shadow-color);
-        --mark-color: var(--title-shadow-color);
-    }
-}
-
-@media (prefers-color-scheme: light) {
-    :root {
-        --main-text-color: #353430;
-        --title-color: #ffc2e6;
-        --title-shadow-color: #ff0070;
-        --title-decor-color: #ff8dcb;
-        --hover-color: 1px solid rgba(50, 49, 45, 0.4);
-        --background-color: #fff1f7;
-        --background-image: url(../images/cover-image-light.png);
-        --article-title-color: var(--main-text-color);
-        --section-title-color: var(--main-text-color);
-        --border-color: var(--title-shadow-color);
-        --corners-color: var(--main-text-color);
-        --link-shadow-color: var(--title-color);
-        --mark-color: var(--background-color);
-    }
+    --main-text-color: #f1b2ce;
+    --title-color: #db00ff;
+    --title-shadow-color: #ff0070;
+    --hover-color: 1px solid rgba(255, 0, 112, 0.4);
+    --background-color: #000028;
+    --background-image: url(../images/cover-image-dark.png);
+    --article-title-color: var(--background-color);
+    --section-title-color: var(--title-shadow-color);
+    --border-color: var(--main-text-color);
+    --corners-color: var(--title-shadow-color);
+    --title-decor-color: var(--title-shadow-color);
+    --link-shadow-color: var(--title-shadow-color);
+    --mark-color: var(--title-shadow-color);
 }

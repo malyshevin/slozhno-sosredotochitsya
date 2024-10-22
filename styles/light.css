@@ -17,3 +17,21 @@
 .page.theme_light .header__mark {
     display: none;
 }
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --main-text-color: #353430;
+        --title-color: #ffc2e6;
+        --title-shadow-color: #ff0070;
+        --title-decor-color: #ff8dcb;
+        --hover-color: 1px solid rgba(50, 49, 45, 0.4);
+        --background-color: #fff1f7;
+        --background-image: url(../images/cover-image-light.png);
+        --article-title-color: var(--main-text-color);
+        --section-title-color: var(--main-text-color);
+        --border-color: var(--title-shadow-color);
+        --corners-color: var(--main-text-color);
+        --link-shadow-color: var(--title-color);
+        --mark-color: var(--background-color);
+    }
+}
