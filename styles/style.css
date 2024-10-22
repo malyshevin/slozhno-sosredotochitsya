@@ -1,7 +1,8 @@
 .page {
-    background: var(--background-image) no-repeat top center, var(--background-color);
+    background: var(--background-image) no-repeat, var(--background-color);
     background-attachment: fixed;
-    background-size: auto 768px;
+    background-size:  cover;
+    background-position: top center;
     color: var(--main-text-color);
 }
 
