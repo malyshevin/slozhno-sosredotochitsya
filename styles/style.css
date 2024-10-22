@@ -225,11 +225,12 @@
 }
 
 .header__subtitle {
-    align-self: center;
+    align-self: start;
     justify-self: end;
     width: 50%;
     font-weight: 700;
     color: var(--article-title-color);
+    margin-top: 20px;
 }
 
 @media (width < 425px) {
