@@ -225,7 +225,7 @@
 }
 
 .header__subtitle {
-    align-self: start;
+    align-self: center;
     justify-self: end;
     width: 50%;
     font-weight: 700;
