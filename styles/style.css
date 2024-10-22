@@ -248,13 +248,13 @@
     color: var(--article-title-color);
 }
 
-@media (width >= 768px) and (width < 1024px) {
+@media (width < 1024px) {
     .section__title {
         width: 35%;
     }
 }
 
-@media (width >= 375px) and (width < 768px) {
+@media (width < 768px) {
     .section__title {
         width: 100%;
         margin-bottom: 20px;
@@ -318,14 +318,14 @@
     width: 33%;
 }
 
-@media (width >= 768px) and (width < 1024px) {
+@media (width < 1024px) {
     .section:first-of-type .section__title,
     .section:nth-of-type(3) .section__title {
           width: 32%;
     }
 }
 
-@media (width >= 375px) and (width < 768px) {
+@media (width < 768px) {
     .section:first-of-type .section__title,
     .section:nth-of-type(3) .section__title {
         width: 100%;
@@ -341,14 +341,14 @@
     width: 66%;
 }
 
-@media (width >= 768px) and (width < 1024px) {
+@media (width < 1024px) {
     .section:first-of-type .section__article-list,
     .section:nth-of-type(3) .section__article-list {
         width: 65%;
     }
 }
 
-@media (width >= 375px) and (width < 768px) {
+@media (width < 768px) {
     .section:first-of-type .section__article-list,
     .section:nth-of-type(3) .section__article-list {
         width: 100%;
@@ -359,19 +359,18 @@
     width: 30%;
 }
 
-@media (width >= 375px) and (width < 768px) {
+@media (width < 768px) {
     .section:nth-of-type(2) .section__title {
         width: 100%;
     }
 }
 
-@media (width >= 1024px) {
-    .section:nth-of-type(2) .section__article-list {
-        justify-content: space-between;
-    }
+.section:nth-of-type(2) .section__article-list {
+    justify-content: space-between;
 }
 
-@media (width >= 375px) and (width < 1024px) {
+
+@media (width < 1024px) {
     .section:nth-of-type(2) .section__article-list {
         gap: 20px;
     }
@@ -382,7 +381,7 @@
     width: 32%;
 }
 
-@media (width >= 375px) and (width < 1024px) {
+@media (width < 1024px) {
     .section:nth-of-type(2) .section__article-item {
         flex: 1 0 auto;
         width: 100%;
