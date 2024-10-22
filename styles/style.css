@@ -65,7 +65,7 @@
 
 @media (width < 768px) {
     .decorated-zone::before {
-        bottom: 17px;
+        bottom: 10px;
         left: 10px;
     }
 }
