@@ -174,14 +174,9 @@
     align-self: center;
 }
 
-@media (width >= 375px) and (width < 1024px) {
-    .header__title {
-        text-shadow: 4px 4px 0px var(--title-decor-color);
-    }
-}
-
 @media (width < 1024px) {
     .header__title {
+        text-shadow: 4px 4px 0px var(--title-decor-color);
         margin-left: -3%;
     }
 }
@@ -200,7 +195,13 @@
     width: 50%;
     font-weight: 700;
     color: var(--article-title-color);
-    margin-top: 40px;
+    margin-top: 50px;
+}
+
+@media (width < 1024px) {
+    .header__subtitle {
+        margin-top: 40px;
+    }
 }
 
 @media (width < 425px) {
